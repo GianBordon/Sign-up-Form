@@ -1,0 +1,178 @@
+:root{
+    --font:"Fira Sans Condensed", sans-serif;
+    --color-bg: #F5C3CC;
+    --color-tx:#B2194B;
+    --color-btn: #861338;
+    --color-ic:#D81E5B;
+    --color-bd:#F0A5B2;
+    --color-by:#FAE4E8
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-color: var(--color-by);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: var(--font);
+    border: 2px solid var(--color-bd);
+    height: 700px;
+    width: 1400px;
+}
+
+.izq{
+    width: 45%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(./img/pablo-de-la-fuente-UPexcwb9S94-unsplash.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: absolute;
+    top: 150px;
+    width: calc(100% - 20px);
+}
+.title-logo{
+    font-weight: 1000;
+    font-size: 56px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #fff;
+
+}
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+.der{
+    width: 55%;
+    height: 100%;
+    background-color: #F5C3CC;
+    position: relative;
+}
+
+.intro,.middle,.outro{
+    position: absolute;
+    width: 100%;
+}
+
+.intro{
+    top: 0;
+    height: 30%;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.intro span{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-22%,-80%);
+    -webkit-transform: translate(-22%,-80%);
+    -moz-transform: translate(-22%,-80%);
+    -ms-transform: translate(-22%,-80%);
+    -o-transform: translate(-22%,-80%);
+}
+
+.middle{
+    top: 30%;
+    height: auto;
+    background-color: var(--color-bd);
+    box-shadow: 0px 2px 12px -5px rgba(0, 0, 0, 0.5), 
+                0px -2px 12px -5px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-1, .sec-2, .sec-3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 -30%; 
+    width: 200px; 
+    margin-bottom: 10px; 
+}
+
+input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+input:invalid{
+    color: #e00;
+}
+
+h2{
+    margin-right: 80%;
+}
+
+.outro{
+    bottom: 0;
+    height: 30%;
+}
+
+.container-outro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.btn{
+    margin: 20px;
+    padding: 10px 60px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: var(--color-btn);
+    border: 1px solid var(--color-btn);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.spn{
+    margin: 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.spn a{
+    text-decoration: none;
+    color: #7A1133;
+}
